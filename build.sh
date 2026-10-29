@@ -36,4 +36,8 @@ sips -z 1024 1024 Murmur.png --out "$ICONSET/icon_512x512@2x.png"  >/dev/null
 iconutil -c icns "$ICONSET" -o "$APP/Contents/Resources/AppIcon.icns"
 rm -rf "$ICONSET"
 
+# Ad-hoc sign the assembled bundle so Info.plist, the icon and the executable
+# are bound together. This keeps Gatekeeper from reporting the app as "damaged".
+codesign --force --sign - "$APP"
+
 echo "Built $APP"
