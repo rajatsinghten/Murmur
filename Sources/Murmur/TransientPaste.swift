@@ -1,5 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0-or-later
-// Adapted from Vorssaint's speech-to-text implementation.
+// SPDX-License-Identifier: MIT
 
 import AppKit
 import Carbon.HIToolbox
