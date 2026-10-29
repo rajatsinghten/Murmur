@@ -18,6 +18,7 @@ On-device voice typing for macOS. Hold a global shortcut, speak, and the transcr
 ```sh
 ./build.sh          # release build into build/Murmur.app
 ./build.sh debug    # debug build
+./package.sh        # build and create build/Murmur.dmg (unsigned)
 ```
 
 `Murmur.png` is converted into the app's `.icns` icon automatically.
@@ -44,4 +45,4 @@ On first use Murmur asks for **Microphone** and **Speech Recognition**. To paste
 
 ## License
 
-[GPL-3.0-or-later](LICENSE). Murmur adapts the speech-to-text implementation from [vorssaint-utils](https://github.com/vorssaint/vorssaint-utils), so it carries the same license.
+[MIT](LICENSE) © 2026 Rajat Kumar Singh.
